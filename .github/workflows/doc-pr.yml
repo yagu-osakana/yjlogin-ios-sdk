@@ -16,7 +16,13 @@ jobs:
     - name: install-bundler and jazzy
       run: |
         gem install bundler
-        bundle install --path vendor/bundle
+        bundle install
 
     - name: Generate document
       run: bundle exec jazzy
+
+    - name: Archive xcodebuild log
+      uses: actions/upload-artifact@v3
+      with:
+        name: xcodebuild_log
+        path: var/folders
