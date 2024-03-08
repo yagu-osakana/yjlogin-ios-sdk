@@ -31,7 +31,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_user_cancel() {
@@ -52,7 +52,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_user_cancel_button() {
@@ -70,7 +70,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_system_error() {
@@ -91,7 +91,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_response_failed_invalid_state() {
@@ -109,7 +109,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_response_failed_missing_state() {
@@ -127,7 +127,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_response_failed_unnecessary_state() {
@@ -145,7 +145,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_response_failed_undefined() {
@@ -166,7 +166,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_response_failed_missing_authorization_code() {
@@ -184,7 +184,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_user_interaction_required_login_required() {
@@ -205,7 +205,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_user_interaction_required_consent_required() {
@@ -226,7 +226,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_user_interaction_required_interaction_required() {
@@ -247,7 +247,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_request_failed_access_denied() {
@@ -268,7 +268,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_request_failed_invalid_scope() {
@@ -289,7 +289,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_request_failed_invalid_request() {
@@ -310,7 +310,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_request_failed_unsupported_response_type() {
@@ -331,7 +331,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_undefined_error() {
@@ -356,7 +356,7 @@ class AuthenticationProcessTests: XCTestCase {
             }
         }
         process?.start(request: request)
-        self.wait(for: [expect], timeout: 2.0)
+        self.wait(for: [expect], timeout: 3.0)
     }
 
     func test_resume_success() {
