@@ -23,7 +23,7 @@ class LoginManagetTests: XCTestCase {
             expect.fulfill()
         }
 
-        self.wait(for: [expect], timeout: 3.0)
+        self.wait(for: [expect], timeout: 2.0)
     }
 
     func test_login_optional_parameter_success() {
@@ -36,7 +36,7 @@ class LoginManagetTests: XCTestCase {
             XCTAssertEqual(result.state, "state")
             expect.fulfill()
         }
-        self.wait(for: [expect], timeout: 3.0)
+        self.wait(for: [expect], timeout: 2.0)
     }
 
     func test_login_error() {
@@ -51,7 +51,7 @@ class LoginManagetTests: XCTestCase {
             }
         }
 
-        self.wait(for: [expect], timeout: 3.0)
+        self.wait(for: [expect], timeout: 2.0)
     }
 
     func test_login_concurrent_with_disable_universal_links() {
@@ -81,7 +81,7 @@ class LoginManagetTests: XCTestCase {
             }
         }
 
-        self.wait(for: [expect, expect2], timeout: 3.0)
+        self.wait(for: [expect, expect2], timeout: 2.0)
     }
 
     func test_login_concurrent_with_enable_universal_links() {
@@ -109,6 +109,6 @@ class LoginManagetTests: XCTestCase {
             }
         }
 
-        self.wait(for: [expect, expect2], timeout: 3.0)
+        self.wait(for: [expect, expect2], timeout: 2.0)
     }
 }
